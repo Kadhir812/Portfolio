@@ -1,0 +1,18 @@
+@import './variables';
+@import './mixins';
+@import './contact';
+@import './about';
+@import './footer';
+@import './projects';
+@import './hero';
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  text-align: center;
+  padding: 50px;
+}
