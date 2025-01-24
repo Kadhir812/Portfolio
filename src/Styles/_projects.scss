@@ -1,45 +1,41 @@
 .projects {
   padding: 2rem;
+  overflow-y: auto; /* Enable scrolling for projects section */
+  flex: 1; /* Allow this section to grow */
+  min-height: 0; /* Ensure the section does not overflow */
+  max-height: calc(100vh - 80px); /* Adjust height based on the navbar size */
+}
 
-  h2 {
-    font-size: 2rem;
-    color: $primary-color; // Make sure $primary-color is defined or replace with a color code
-    text-align: center;
-    margin-bottom: 1.5rem;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem; /* Add padding to prevent items from sticking to the bottom */
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+  p {
+    margin-bottom: 1rem;
   }
 
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  a {
+    color: $primary-color; /* Ensure $primary-color is defined */
+    text-decoration: none;
+    font-weight: bold;
 
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #333;
-    }
-
-    p {
-      margin-bottom: 1rem;
-      color: #666;
-    }
-
-    a {
-      color: $primary-color;
-      text-decoration: none;
-      font-weight: bold;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
