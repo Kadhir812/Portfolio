@@ -47,12 +47,24 @@ function Home() {
           {activeSection === "home" && (
             <>
               <h1 className="hero-title">Hi, I'm Kadhir Senthilkumar</h1>
-              <h2 className="hero-subtitle">Full-Stack Developer</h2>
-              <p className="hero-description">
-                Enthusiastic developer with experience in building scalable web
-                applications and expertise in React, Node.js, and MySQL. I love
-                solving real-world problems and learning new technologies.
-              </p>
+    <h2 className="hero-subtitle">Full-Stack Developer & DevOps Engineer</h2>
+    <p className="hero-description">
+      Passionate **Full-Stack Developer & DevOps Engineer** with a strong
+      background in building scalable web applications and automating CI/CD 
+      pipelines. I specialize in **React, Node.js, Spring Boot, and MongoDB** 
+      for full-stack development, and **Docker, Kubernetes, Jenkins, and Terraform** 
+      for DevOps automation.  
+      <br /><br />
+      I thrive on solving real-world problems by integrating development and 
+      operations seamlessly, ensuring high availability, security, and performance 
+      of cloud-native applications. I have hands-on experience in implementing 
+      **CI/CD pipelines**, monitoring systems using **Prometheus & Grafana**, 
+      and container orchestration with **Kubernetes**.  
+      <br /><br />
+      I am constantly learning and exploring new technologies to optimize 
+      workflows, reduce deployment times, and enhance application scalability.  
+      Let's build something amazing together!
+    </p>
             </>
           )}
           {activeSection === "about" && <About />} {/* Render About component */}
